@@ -1,0 +1,12 @@
+theme: minimal-mistakes-jekyll
+title: Tue Hellstern
+description: IDA
+show_downloads: false
+
+remote_theme: pages-themes/minimal@v0.2.0
+
+github:
+  is_project_page: false
+
+plugins:
+- jekyll-remote-theme
