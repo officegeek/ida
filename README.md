@@ -4,4 +4,4 @@ Jeg afholder forskellige kurser for IDA
 ## Test
 
 ## Python Vidergående
-[Link](./)
+[Link](./python_2.md)
