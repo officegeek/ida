@@ -3,4 +3,5 @@ Jeg afholder forskellige kurser for IDA
 
 ## Test
 
-## test 2
+## Python Vidergående
+[Link](./)
