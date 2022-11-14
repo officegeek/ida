@@ -24,24 +24,27 @@
 >   Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
 
 
-## Scatter plot
-I et Scatter plot viser prikker værdierne af to separate numeriske variable på x-aksen og y-aksen. 
-
-Scatterplot er essentielle i statistik, fordi de kan vise styrken af ​​en korrelation mellem to variable (*X og Y*).
-
-- Det viser sammenhængen (*positiv og negativ*) og tendensen mellem de to variable.
-- Det hjælper med at finde minimum, maksimum og outliers.
-- Det viser, hvor meget en variabel påvirker en anden variabel.
-- Det hjælper dig med at forudsige adfærden af ​​en variabel (*en afhængig variabel*) afhængigt af målingen af ​​den anden variabel (*uafhængig*)
-
-## Imports
+# Imports
 Vi skal bruge følgende moduler
 
 ```python
 import pandas as pd
 from matplotlib import pyplot as plt
 import seaborn as sns
+```
 
+# Plot theme
+Du kan bruge forskellige standard plot temaer, Seaborn har 5 af disse temaer:
+
+- white
+- dark
+- whitegrid
+- darkgrid
+- ticks
+
+Du skab bruge kommandoen set_style() for at sætte temaet du vil bruge.
+
+```python
 sns.set(style='darkgrid')
 ```
 
@@ -55,7 +58,28 @@ print(tips.head())
 
 ![](./image/tips_data.jpg)
 
-# Plot
+# Bar plot
+Hvordan fordeler omsætningen (*total_bill*) sig over de forskellige ugedage.
+
+```python
+sns.barplot(x='day', y='total_bill', data=tips)
+plt.show()
+```
+
+## Python file
+Du kan hente min Bar plot Python fil [her](./_code/plot_bar.py)
+
+# Scatter plot
+I et Scatter plot viser prikker værdierne af to separate numeriske variable på x-aksen og y-aksen. 
+
+Scatterplot er essentielle i statistik, fordi de kan vise styrken af ​​en korrelation mellem to variable (*X og Y*).
+
+- Det viser sammenhængen (*positiv og negativ*) og tendensen mellem de to variable.
+- Det hjælper med at finde minimum, maksimum og outliers.
+- Det viser, hvor meget en variabel påvirker en anden variabel.
+- Det hjælper dig med at forudsige adfærden af ​​en variabel (*en afhængig variabel*) afhængigt af målingen af ​​den anden variabel (*uafhængig*)
+
+## Plot
 For at oprette et Scatter plot skal du bruge 2 numeriske kolonner, x- og y-akserne.
 
 Det viser en positiv sammenhæng, da vi kan se, at ved at øge det samlede beløb (*total_bill*) stiger drikkepengene (*tip*) også.
@@ -115,3 +139,6 @@ plt.show()
 ```
 
 ![](./image/scatter_plot_5.png)
+
+## Python file
+Du kan hente min Scatter plot Python fil [her](./_code/plot_scatter.py)

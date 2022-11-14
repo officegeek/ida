@@ -11,7 +11,7 @@ sns.set(style='darkgrid')
 tips = sns.load_dataset('tips')
 print(tips.head())
 
-# Plot
+# Scatter Plot
 sns.scatterplot(x='total_bill', y='tip', data=tips)
 plt.show()
 
