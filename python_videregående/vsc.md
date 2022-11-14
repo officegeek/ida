@@ -1,3 +1,11 @@
+---
+    layout: default
+    title: Visual Studio Code
+    parent: Python Videregående
+    has_children: false
+    nav_order: 5
+---
+
 # Visual Studio Code
 Valg af IDE er nærmest et religiøst spørgsmål, hvis du først er glad for en editor er det svært at skifte. På dette seminar er det Visual Studio Code der bliver brugt, det vil være muligt at bruge andre IDE'er, men alle kode eksempler osv. vil være i Visual Studio Code.
 
