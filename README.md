@@ -1,7 +1,6 @@
 # IDA Kurser
 Jeg afholder forskellige kurser for IDA
 
-## Test
 
-## Python Vidergående
-[Link](./python_2.md)
+## Python Videregående
+Se mere [her](./python_videreg%C3%A5ende/README.md)
