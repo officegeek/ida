@@ -4,6 +4,8 @@ import tuescript
 # Afvikling af funktionen my_function i tuescript
 tuescript.my_function()
 
+tuescript.my_function_test()
+
 
 # Afvikling af denne fil
 if __name__ == "__main__":

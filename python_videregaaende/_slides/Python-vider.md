@@ -17,7 +17,7 @@ markdown.marp.enableHtml
 ## Tue Hellstern
 
 ## Internet
-- idapublic
+- IDA-Public
 - Ingen kode
 
 ----

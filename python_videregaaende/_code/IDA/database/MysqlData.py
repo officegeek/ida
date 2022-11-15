@@ -18,7 +18,7 @@ def connect():
         config.read('config.ini')
 
         # Connect to MySQL
-        db_connection_str = config['mysqlini']['conn_string']
+        db_connection_str = config['mysqlini'].get('conn_string')
         db_conn = create_engine(db_connection_str)
         
         return db_conn

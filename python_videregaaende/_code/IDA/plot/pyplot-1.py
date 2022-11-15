@@ -10,7 +10,7 @@ ypoints = np.array([0, 250])
 plt.plot(xpoints, ypoints)
 
 # Vis plot
-plt.show()
+#plt.show()
 
 # Gem plot
-plt.savefig('demoplot.png')
+plt.savefig('demoplot.jpg')

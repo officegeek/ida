@@ -3,7 +3,7 @@ a = 10
 b = 20
 
 if b > a:
-    print("b er er størst")
+  print("b er er størst")
 
 # elif
 a = 33
@@ -19,11 +19,11 @@ a = 200
 b = 33
 
 if b > a:
-  print("b er størrer end a")
+  print("b er større end a")
 elif a == b:
   print("a og b er ens")
 else:
-  print("a er størrer end b")
+  print("a er større end b")
 
 # and
 a = 200
@@ -32,6 +32,7 @@ c = 500
 
 if a > b and c > a:
   print("Begge betingelser er sande/true")
+
 
 # or
 if a > b or a > c:
@@ -52,7 +53,7 @@ a = 10
 b = 20
 
 if b > a:
-    pass
+  pass
 
 # Loop
 # while
