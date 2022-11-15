@@ -1,5 +1,7 @@
 # IDA Kurser
-Jeg afholder forskellige kurser for IDA
+Jeg afholder forskellige kurser og webinarer for IDA.
+
+## Python Grundlæggende
 
 
 ## Python Videregående
