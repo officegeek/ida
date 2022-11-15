@@ -17,8 +17,8 @@ markdown.marp.enableHtml
 ## Tue Hellstern
 
 ## Internet
-- ida-public
-- no code
+- idapublic
+- Ingen kode
 
 ----
 
@@ -32,6 +32,7 @@ markdown.marp.enableHtml
 - Kl. 21.30  –  Tak for i aften
 
 ---
+
 ![bg left:27% 310% blur:3px](https://github.com/officegeek/image/raw/main/programming.jpeg)
 
 # Tue Hellstern
@@ -45,20 +46,22 @@ markdown.marp.enableHtml
 - Selvstændig siden 1995
 - Programmering, Databaser, Integration, Projekt styring
 - Typisk større virksomheder
+
 ---
 
 ![bg right:45% 200%  blur:3px](https://github.com/officegeek/image/raw/main/programming.jpeg)
-# Agenda
 
+# Agenda
 - Introduktion til Visual Studio Code
 - f-string
 - If & Loop
 - Virtual Environment
 - Funktioner
+- Filer
 - Fejl håndtering
 - Databaser
-- Klasser & Objekter
 - Matplotlib
+- Klasser & Objekter
 - Dash - Demo
 
 ---
@@ -66,7 +69,6 @@ markdown.marp.enableHtml
 ![bg left:33% 255% blur:3px](https://github.com/officegeek/image/raw/main/programming.jpeg)
 
 # Hvem er I?
-
 - Programmerings erfaring?
 - Erfaring med Python?
 - Erfaringer med Visual Studio Code? - Andet IDE?
@@ -94,9 +96,6 @@ Features include support for debugging, syntax highlighting, intelligent code co
 In the Stack Overflow 2021 Developer Survey, **Visual Studio Code was ranked the most popular developer environment tool**, with 70% of 82.000 respondents reporting that they use it.
 
 [code.visualstudio.com](https://code.visualstudio.com)
----
-
-
 
 ---
 
@@ -110,7 +109,7 @@ pris = 1366.1265
 print(f'Prisen er {pris:.2f}')
 ```
 
-<!-- _footer: f-string.py -->
+[f-string.py](../_code/IDA/f-string.py)
 
 ---
 
@@ -123,7 +122,7 @@ Skriv et Python-program, som modtager radius af en cirkel og udregner arealet af
 - Input skal være med 2 decimaler
 - Output skal være formateret med 2 decimaler
 
-<!-- _footer: pi-opgave.py --> 
+[pi-opgave.py](../_code/IDA/opgaver/pi-opgave.py)
 
 ---
 
@@ -139,7 +138,7 @@ else:
   print("a er størrer end b")
 ```
 
-<!-- _footer: code_kontrolstruktur.py --> 
+[code_kontrolstruktur.py](../_code/IDA/code_kontrolstruktur.py)
 
 ---
 
@@ -148,7 +147,7 @@ else:
 # Opgave - Find det største nummer
 Skriv et program der finder det største tal ud af to tal som brugeren "skriver" (input)
 
-<!-- _footer: find-storste-nr.py --> 
+[find-storste-nr.py](../_code/IDA/opgaver/find-storste-nr.py)
 
 ---
 
@@ -170,7 +169,10 @@ for n in navne:
  print(n)
 ```
 
+[loop_demo.py](../_code/IDA/loop_demo.py)
+
 ---
+
 ![bg right:30% 50%](./image/ur.jpg)
 
 # while - Ur
@@ -185,7 +187,7 @@ while True:
   time.sleep(1)
 ```
 
-<!-- _footer: ur.py --> 
+[ur.py](../_code/IDA/ur.py)
 
 ---
 
@@ -201,6 +203,8 @@ liste2=[]
 Print indholdet af liste2
 
 *Hint: Brug* **liste2.append(<værdi>)**
+
+[positiv-liste.py](../_code/IDA/opgaver/positiv-liste.py)
 
 ---
 
@@ -243,7 +247,7 @@ def min_funktion():
 min_funktion()
 ```
 
-<!-- _footer: funktioner.py --> 
+[funktioner.py](../_code/IDA/funktioner.py)
 
 ---
 
@@ -268,7 +272,7 @@ result = calculator(add, 10, 20)
 print(result)
 ```
 
-<!-- _footer: functions-argument.py --> 
+[functions-argument.py](../_code/IDA/functions-argument.py)
 
 ---
 
@@ -288,7 +292,7 @@ I denne funktionen udskriver vi først nummeret, reducerer derefter tallet med 1
 
 Når tallet når 0, stopper vi med at returnere værdien 0 i funktionen
 
-<!-- _footer: demo-recursion.py -->
+[demo-recursion.py](../_code/IDA/demo-recursion.py)
 
 ---
 
@@ -315,7 +319,7 @@ else:
     print('Hvis afviklet via import - __name__ = ' + __name__)
 ```
 
-<!-- _footer: tuescript.py -->
+[tuescript.py](../_code/IDA/tuescript.py)
 
 ---
 
@@ -334,7 +338,7 @@ else:
     print ('Hvis afviklet via import - __name__ = ' + __name__)
 ```
 
-<!-- _footer: Function_name.py -->
+[Function_name.py](../_code/IDA/Function_name.py)
 
 ---
 
@@ -352,8 +356,7 @@ total_betaling(100) # Standard 10%
 total_betaling(100, 10.5)
 ```
 
-
-<!-- _footer: tip-function.py -->
+[tip-function.py](../_code/IDA/opgaver/tip-function.py)
 
 ---
 
@@ -370,7 +373,7 @@ Python har flere funktioner til **creating**, **reading**, **updating**, og **de
 
 Det er Python funktionen **open()** du skal bruge
 
-**open()** funktionen brugere to parameterer
+**open()** funktionen brugere to parametre
 
 - **filename**
 - **mode**
@@ -480,7 +483,7 @@ except:
   print('Kunne ikke åbne filen')
 ```
 
-<!-- _footer: fejl.py --> 
+[fejl.py](../_code/IDA/fejl.py)
 
 ---
 
@@ -489,26 +492,26 @@ Det er muligt at forbinde til de fleste typer af databaser fra Python.
 Som eksempel kommer vi til at bruge en MySQL database, der er hosted på Azure.
 
 Forbindelsen til databasen er opdelt i følgende filer:
-- config.ini
-- MysqlData.py
+- [config.ini](../_code/IDA/database/config.ini)
+- [MysqlData.py](../_code/IDA/database/MysqlData.py)
 
 ---
 
 # config.ini
 
-- host = tueh-sigel-mysql-server.mysql.database.azure.com
-- user = hellstern@tueh-sigel-mysql-server
-- password = IDASeminar2022
+- host = dtudatabase.mysql.database.azure.com
+- user = dtuhellstern
+- password = MySQL13102022#!
 - database = northwind
 
 ```ini
 [mysqlini]
-conn_string = mysql://hellstern@tueh-sigel-mysql-server:IDASeminar2022@tueh-sigel-mysql-server.mysql.database.azure.com/northwind
+conn_string = mysql://dtuhellstern:MySQL13102022#!@dtudatabase.mysql.database.azure.com/northwind
 ```
 
 *Disse login værdier virker kun i dag!*
 
-<!-- _footer: config.ini -->
+[config.ini](../_code/IDA/database/config.ini)
 
 ---
 
@@ -538,7 +541,7 @@ def connect():
 
 ```
 
-<!-- _footer: MysqlData.py -->
+[MysqlData.py](../_code/IDA/database/MysqlData.py)
 
 ---
 
@@ -571,7 +574,7 @@ if __name__ == '__main__':
     getdata()
 ```
 
-<!-- _footer: MysqlData.py -->
+[MysqlData.py](../_code/IDA/database/MysqlData.py)
 
 ---
 
@@ -616,7 +619,7 @@ plt.show()
 plt.savefig('demoplot.png')
 ```
 
-<!-- _footer: pyplot-1.py -->
+[pyplot-1.py](../_code/IDA/plot/pyplot-1.py)
 
 ---
 
@@ -635,7 +638,7 @@ plt.bar(x,y)
 plt.show()
 ```
 
-<!-- _footer: pyplot-bar.py -->
+[pyplot-bar.py](../_code/IDA/plot/pyplot-bar.py)
 
 ---
 
@@ -654,7 +657,7 @@ plt.hist(x)
 plt.show()
 ```
 
-<!-- _footer: plot-hist.py -->
+[plot-hist.py](../_code/IDA/plot/plot-hist.py)
 
 ---
 
@@ -673,7 +676,7 @@ plt.pie(y)
 plt.show()
 ```
 
-<!-- _footer: plot-pie.py -->
+[plot-pie.py](../_code/IDA/plot/plot-pie.py)
 
 ---
 
@@ -694,7 +697,7 @@ plt.scatter(x, y)
 plt.show()
 ```
 
-<!-- _footer: punkt.py -->
+[punkt.py](../_code/IDA/plot/punkt.py)
 
 ---
 
@@ -722,7 +725,7 @@ plt.grid()
 plt.show()
 ```
 
-<!-- _footer: label-plot.py -->
+[label-plot.py](../_code/IDA/plot/label-plot.py)
 
 ---
 
@@ -764,6 +767,8 @@ print(m1.navn)
 print(m1.afdeling)
 ```
 
+[](../_code/IDA/klasse/ClassDemo.py)
+
 ---
 
 ![bg right:50% 100%](./image/klasse.jpg)
@@ -776,4 +781,4 @@ Der er også nogle indbyggede attributter, alle Python klasser har:
 ![bg right:70% 90%](./image/dash-demo.jpg)
 # Dash demo
 
-<!-- _footer: DashDemo.py -->
+[DashDemo.py](../_code/IDA/dash/DashDemo.py)
