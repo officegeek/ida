@@ -1,8 +1,9 @@
 # IDA Kurser
 Jeg afholder forskellige kurser og webinarer for IDA.
 
-## Python Grundlæggende
+# Kurser
+- ## [Python Grundlæggende](./python_grundlaegende/README.md)
+- ## [Python Videregående](./python_videregaaende/README.md)
 
-
-## Python Videregående
-Se mere [her](./python_videregaaende/README.md)
+# Webinar
+- 

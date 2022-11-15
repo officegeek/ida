@@ -17,8 +17,8 @@ markdown.marp.enableHtml
 ## Tue Hellstern
 
 ## Internet
-- **Navn: comwellhotels**
-- **Kode: comwellhotels**
+- ida-public
+- no code
 
 ----
 
